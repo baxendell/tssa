@@ -1,0 +1,46 @@
+/*
+** Base
+*/
+$screen-xs:                  480px !default;
+$screen-sm:                  768px !default;
+$screen-md:                  992px !default;
+$screen-lg:                  1200px !default;
+
+// devices viewport width starts at:
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 480px,
+  'tablet': $screen-sm,
+  'desktop': $screen-md,
+  'widescreen': $screen-lg
+);
+ 
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+.wf-active, 
+.wf-inactive {
+    -webkit-transition: opacity 1s ease-out;  
+    -moz-transition: opacity 1s ease-out; 
+    -o-transition: opacity 1s ease-out;  
+    transition: opacity 1s ease-out;  
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.skiplink {
+  left: -9999px;
+  position: absolute;
+}

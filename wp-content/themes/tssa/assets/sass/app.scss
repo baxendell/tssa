@@ -1,0 +1,48 @@
+/**
+ * App - start here
+ */
+/* Theme Variables ------ */
+@import 'theme/variables';
+
+/* Vendors --------------- */
+//@import "vendors/bootstrap-sprockets";
+@import "vendors/bootstrap";
+@import "vendors/bootstrap-select";
+@import "vendors/slick/slick";
+
+/* Base ----------------- */
+@import 'base/mixins';
+@import "base/reset";
+@import 'base/helpers';
+@import 'base/global';
+
+/* Theme Elements ------- */
+@import 'theme/elements/typography';
+@import 'theme/elements/icons';
+@import 'theme/elements/backgrounds';
+@import 'theme/elements/buttons';
+@import 'theme/elements/form';
+@import 'theme/elements/locations';
+@import 'theme/elements/results';
+@import 'theme/elements/testimonials';
+
+/* Theme Areas --------- */
+@import 'theme/areas/header';
+@import 'theme/areas/navbar';
+@import 'theme/areas/banner';
+@import 'theme/areas/breadcrumbs';
+@import 'theme/areas/awards';
+@import 'theme/areas/sidebar';
+@import 'theme/areas/footer';
+
+/* Theme Pages --------- */
+@import 'theme/pages/page';
+@import 'theme/pages/404';
+@import 'theme/pages/about';
+@import 'theme/pages/blog';
+@import 'theme/pages/bio';
+@import 'theme/pages/contact';
+@import 'theme/pages/front-page';
+@import 'theme/pages/legal-services';
+@import 'theme/pages/locations';
+@import 'theme/pages/practice-areas';

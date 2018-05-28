@@ -1,0 +1,16 @@
+/**Icons**/
+
+.icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    &-cw {
+    	background-image: url('../images/icons/cw.png');
+    	height: 14px;
+    	width: 14px;
+    	margin-right: 10px;
+    	position: relative;
+    	top: 2px;
+    }
+}
+

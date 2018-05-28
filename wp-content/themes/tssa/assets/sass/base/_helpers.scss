@@ -1,0 +1,163 @@
+
+
+/**Backgrounds**/
+
+/**Animations**/
+
+/**Custom Classes**/
+
+.pull {
+  &-right {
+    @media screen and (min-width: 992px) {
+      &-md {
+        float: right !important;
+      }
+    }
+  }
+}
+
+.no-p {
+  p {
+    display: none;
+  }
+
+  + p {
+    display: none;
+  }
+}
+
+.img-full {
+  width: 100%;
+}
+
+.no-pad {
+  &-all {
+    padding: 0 !important;
+  }
+  
+  @media screen and (min-width: 768px) {
+    padding: 0 !important;
+    &-left {
+      padding-left: 0 !important;
+    }
+    &-right {
+      padding-right: 0 !important;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &-left-lg {
+      padding-left: 0 !important;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &-sm {
+      padding: 0 !important;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &-mobile {
+      padding: 0 !important;
+    }
+  }
+}
+
+
+.pl {
+  &-30 {
+    @media screen and (min-width: 768px) {
+      padding-left: 30px;
+    }  
+  } 
+}
+
+.pr {
+  &-30 {
+    @media screen and (min-width: 768px) {
+      padding-right: 30px;
+    }  
+  }
+}
+
+
+.center-col {
+  float: none;
+  margin: 0 auto;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.ab-vert {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-body {
+  padding-top: 40px;
+}
+
+.modal-content {
+  .close {
+    position: relative;
+    right: 10px;
+    z-index: 9999;
+  }
+}
+
+
+// two column list
+%two-column-list {
+  -moz-column-count: 2;
+  -moz-column-gap: 0px;
+  -webkit-column-count: 2;
+  -webkit-column-gap:  0px;
+  column-count: 2;
+  column-gap: 0px;
+  @media( max-width: 1199px ) {
+    -moz-column-gap: 0px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 0px;
+    column-count: 1;
+    column-gap: 0px;
+  }
+}
+
+// remove two column list
+%remove-two-column-list {
+  -moz-column-count: 1;
+  -moz-column-gap: 0px;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 0px;
+  column-count: 1;
+  column-gap: 0px;
+}
+
+
+// box shawdow buttons
+%boxshadow {
+  box-shadow: 3px 3px 3px black;
+}
+
+// clearfix
+%clearfix {
+ &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.clearfix {
+  @extend %clearfix;
+}
+
+// transition
+%transition {
+ transition: all 0.3s ease-in-out;
+}
+
+

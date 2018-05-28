@@ -1,0 +1,80 @@
+/**Typography**/
+
+body {
+	font-family: $font-family-body;
+	color: $text-color;
+  	//margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+h1, h2, h4, h5 {
+	font-family: $font-family-heading;
+	color: $heading-text-color;
+}
+
+h1 {
+	font-size: $font-size-h1;
+	font-family: $font-family-body-condenced;
+	font-weight: 700;
+}
+
+.page-title {
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+}
+
+h5 {
+}
+
+a {    
+}
+
+p {
+	.entry-content & {
+		margin-bottom: 28px;
+	}
+}
+
+ul {
+
+}
+
+ol {
+	.entry-content & {
+		list-style: none;
+		padding-left: 35px;
+		margin-bottom: 34px;
+
+		li {
+			counter-increment: li;
+			margin-bottom: 24px;
+			&:before {
+				content: counter(li);
+				color: $white;
+				display: inline-block;
+				width: 1em;
+				margin-left: -1.5em;
+				margin-right: 0.7em;
+				text-align: center;
+				background-color: $teal-blue;
+				border-radius: 50%;
+				height: 24px;
+				width: 24px;
+				font-family: $font-family-heading;
+				font-style: italic;
+				line-height: 20px;
+				border: 2px solid #d9dee7;
+			}
+		}
+	}
+}
+
+

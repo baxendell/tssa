@@ -1,0 +1,102 @@
+/**General Page Rules**/
+
+
+.feature-wrap {
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 25px;
+	
+	@media screen and (min-width: 768px) {
+		float: left;
+		margin-right: 30px;
+		text-align: initial;
+		margin-bottom: 20px;
+		
+		&-right {
+			margin: 10px 0 0 0;
+		}
+	}
+}
+
+
+
+/*FAQS*/
+
+.faq-catname {
+	display: none;
+}
+
+.qa-faq {
+
+	h3 {
+		margin-bottom: 10px;
+		a {
+			font-size: 16px;
+			font-weight: 500;
+			color: $body-text-color;
+			position: relative;
+			padding: 12px 20px 12px 54px;
+			display: block;
+			background-color: $breadcrumb-bg;
+			overflow: hidden;
+
+			&:before {
+				content: '';
+				background-color: $teal-blue;
+				width: 40px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: inline-block;
+			}
+
+			&:after {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 40px;
+				content: '+';
+				text-align: center;
+				font-weight: 400;
+				font-size: 29px;
+				font-family: "Arial";
+				color: white;					
+			}
+
+			&.faq-active {
+				&:after {
+					content: '';
+					font-size: 26px;
+					width: 14px;
+					height: 2px;
+					background-color: white;
+					left: 13px;
+				}
+			}
+		}
+	}
+}
+
+.qa-faq-answer {
+	padding: 24px 40px 0 50px;
+}
+
+
+.ssbp-list {
+	.entry-content & {
+		li {
+			padding-left: 0;
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+.site-map-content {
+	ul ul {
+		padding-left: 18px;
+	}
+}
