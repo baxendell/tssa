@@ -17,18 +17,6 @@ $home = esc_attr( home_url() );
             <div class="blog-post clearfix" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
                         
                 <div class="<?php echo ( is_single() ) ? 'blog-title no-pad-mobile' : 'excerpt-title' ?>">
-                
-                    <?php
-                        global $post;
-                        $author_id     = get_the_author_meta( 'ID' );
-                        $author        = get_author_posts_url( $author_id );
-                        $author_name   = get_the_author_meta( 'display_name' );
-                        //$category      = get_the_category_list( ', ', $post->ID );
-                        $category      = get_the_category( $post->ID );
-                        $category_name = $category[0]->name;
-                        $category_id   = $category[0]->term_id;
-                        $link          = get_category_link( $category_id );
-                    ?>                    
                         
                     <div class="title-right">
 
@@ -38,7 +26,7 @@ $home = esc_attr( home_url() );
 
                         <?php else: ?>
 
-                        <h1 itemprop="name headline" class="page-title"><?php the_title() ?></h1>
+                        <h1 itemprop="name headline" class="section-title"><?php the_title() ?></h1>
 
                         <?php endif ?>
 
@@ -71,15 +59,12 @@ $home = esc_attr( home_url() );
                 
                     <div class="post-wrap no-pad-mobile <?php echo ( has_post_thumbnail() ) ? 'col-sm-6 no-pad-right' : 'col-sm-12 no-pad-left' ?>">
 
-                        <div class="post-meta" itemprop="author">
+                        <div class="post-meta hidden" itemprop="author">
 
                             <span>
 
-                                <?php if(!is_post_type_archive('result') && !is_post_type_archive('testimonial') && !is_post_type_archive('qa_faqs')): ?>
                                 <span itemprop="name"><?php echo $author_name; ?> | </span>
-                                <?php else: ?>
-                                <meta itemprop="name" content="<?php echo $author_name; ?>">
-                                <?php endif ?>
+
                                 <meta itemprop="datePublished" content="<?php the_time( c ) ?>">
                                 <meta itemprop="dateModified" content="<?php the_modified_date(); ?>">
 
@@ -128,17 +113,14 @@ $home = esc_attr( home_url() );
                 
                 <?php if( is_single() ) : ?>
                 
-                    <div class="post-wrap col-sm-12 pr-40-lg entry-content">
+                    <div class="post-wrap col-sm-12 entry-content">
 
-                        <div class="post-meta" itemprop="author">
+                        <div class="post-meta hidden" itemprop="author">
 
                             <span>
 
-                                <?php if(is_singular('post')): ?>
                                 <span itemprop="name"><?php echo $author_name; ?> | </span>
-                                <?php else: ?>
-                                <meta itemprop="name" content="<?php echo $author_name; ?>">
-                                <?php endif ?>
+
                                 <meta itemprop="datePublished" content="<?php the_time( c ) ?>">
                                 <meta itemprop="dateModified" content="<?php the_modified_date(); ?>">
 
@@ -167,7 +149,7 @@ $home = esc_attr( home_url() );
                         
                             <?php if( has_post_thumbnail() ) : ?>
     
-                                <div class="image-holder featured-image col-sm-4 no-pad-left no-pad-mobile pull-left">
+                                <div class="image-holder featured-image col-sm-3 col-md-2 pull-left">
         
                                     <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
             

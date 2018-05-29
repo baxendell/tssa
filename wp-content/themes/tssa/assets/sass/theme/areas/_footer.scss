@@ -1,1 +1,21 @@
 /* Footer Styles */
+
+#menu-footer-nav {
+	li {
+		display: inline-block;
+
+		&:after {
+			margin: 0 10px;
+			content: '/';
+			display: inline-block;
+		}
+		a {
+			color: $teal-blue;
+		}
+	}
+}
+
+.built_by, .copyright {
+	text-decoration: none;
+	color: $black;
+}

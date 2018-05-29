@@ -12,18 +12,12 @@ get_header();
 
 			<div class="inner-wrapper row">
 
-				<div class="content col-md-8">
+				<div class="content col-xs-12">
 
 					<?php get_template_part( 'partials/excerpt-loop' ) ?>
 
-					<?php get_template_part('partials/share') ?>
+					<?php //get_template_part('partials/share') ?>
 				</div>
-
-				<aside id="sidebar" class="col-md-4">
-
-					<?php get_template_part( 'sidebars/blog-sidebar' ) ?>
-
-				</aside><!--#sidebar-->
 
 			</div><!--.row-->
 

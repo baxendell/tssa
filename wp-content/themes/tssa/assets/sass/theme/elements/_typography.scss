@@ -12,12 +12,20 @@ h1, h2, h4, h5 {
 }
 
 h1 {
-	font-size: $font-size-h1;
-	font-family: $font-family-body-condenced;
-	font-weight: 700;
 }
 
-.page-title {
+.section-title {
+	@include rem-font-size(32px);
+	text-align: center;
+
+	&:after {
+		content: '';
+		height: 3px;
+		width: 35px;
+		margin: 10px auto;
+		background: $black;
+		display: block;
+	}
 }
 
 h2 {

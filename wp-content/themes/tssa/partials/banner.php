@@ -1,9 +1,0 @@
-<?php
-/**
- * Banner Partial
- */
-
-?>
-
-
-

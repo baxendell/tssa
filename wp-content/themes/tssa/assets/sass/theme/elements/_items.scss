@@ -1,0 +1,31 @@
+.items {
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		position: relative;
+		align-items: stretch;
+	}
+	&__item {
+		text-align: center;
+		text-decoration: none;
+		color: $dark-teal-blue;
+		padding: 0 15px;
+		margin-bottom: 40px;
+
+		@media screen and (min-width: 992px) {
+			width: 30%;
+		}
+	}
+
+	&__box {
+		box-shadow: 5px 6px 18px 0 rgba(0,0,0,.18);
+		padding: 20px;
+
+		p {
+		 	padding: 5px 0;
+		 	border-top: 1px solid #ccc;
+		 	border-bottom: 1px solid #ccc;
+		}
+	}
+}

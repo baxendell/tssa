@@ -1,5 +1,10 @@
 /**General Page Rules**/
 
+body {
+	@media screen and (min-width: 992px) {
+		padding-top: 85px;
+	}
+}
 
 .feature-wrap {
 	margin-top: 10px;
