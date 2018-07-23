@@ -16,7 +16,7 @@ get_header();
 
 		<div class="row">
 
-			<div class="col-xs-12 warehouse-content">
+			<div class="col-md-12 warehouse-content">
 
 				<?php 
 					$wImg = get_field('warehouse_image');
@@ -47,7 +47,7 @@ get_header();
 
 		<div class="row">
 
-			<div class="col-xs-12">
+			<div class="col-md-12">
 
 				<h2 class="section-title">About Us</h2>
 
@@ -97,7 +97,9 @@ get_header();
 
 							<h3><?php the_title() ?></h3>
 
-							<p><strong>Starting Bid: <?php the_field('starting_bid') ?></strong></p>
+							<p><strong>Tri States Low Price: <?php the_field('low_price') ?></strong></p>
+
+							<p><strong>Home Center Pricing: <?php the_field('home_center_price') ?></strong></p>
 
 						</div>
 

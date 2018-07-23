@@ -21,6 +21,8 @@ $dark-teal-blue:			#03415d !default;
 $light-teal:				#7ab7c1 !default;
 $yellow-button-text:		#070f17 !default;
 
+$red: #ab0b0b;
+
 $light-gray-banner-bg:		#f2f3f3 !default;
 $light-gray-banner-text:	#1e2a32 !default;
 
@@ -67,12 +69,12 @@ $link-hover-decoration: underline !default;
 //== Typography
 //
 //
-$font-family-sans-serif:  	 "Asap", sans-serif !default;
-$font-family-serif:       	 "Arapey", serif !default;
+$font-family-sans-serif:  	 "Libre Franklin", sans-serif !default;
+$font-family-serif:       	 "Proza Libre", serif !default;
 
-$font-family-body:	  	   "Asap", sans-serif !default;
-$font-family-body-condenced:    "Asap", sans-serif !default;
-$font-family-heading:	           "Arapey", serif !default;
+$font-family-body:	  	   "Libre Franklin", sans-serif !default;
+$font-family-body-condenced:    "Libre Franklin", sans-serif !default;
+$font-family-heading:	           "Proza Libre", serif !default;
 
 $font-family-base:        	 $font-family-body !default;
 

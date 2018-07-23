@@ -3,6 +3,31 @@
 // Builds on top of the `.nav` components with its own modifier class to make
 // the nav the full height of the horizontal nav (above 768px).
 
+.affix {
+  @media screen and (max-width: 767px) {
+    position: relative !important;
+  }
+}
+
+.logo {
+  font-size: 16px;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  line-height: 1;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  strong {
+    font-size: 34px;
+    font-style: italic;
+    color: $red;
+    font-family: $font-family-serif;
+  }
+}
+
 .navbar {
     position: relative;
     min-height: 56px;
@@ -12,6 +37,26 @@
     top: 0;
     width: 100%;
     z-index: 100;
+    overflow: hidden;
+    
+    .container {
+      position: relative;
+    }
+
+    .logo {
+      z-index: 100;
+
+      @media screen and (max-width: 767px) {
+        margin: 20px auto;
+      }
+
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+      }
+    }
 
     &-nav {
       float: none;
@@ -23,9 +68,12 @@
   		color: $brand-nav-default-color;
   		text-align: center;
   		margin: 15px auto;
-      display: inline-block;
       float: none;
       position: static;
+
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+      }
 
       &:last-child {
         .dropdown-menu {
